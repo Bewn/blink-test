@@ -1,0 +1,10 @@
+workflows:
+  ios-native-quick-start:
+    name: iOS Native
+    max_build_duration: 180
+    instance_type: mac_mini_m1
+    environment: 
+      xcode: latest
+
+    artifacts: 
+      - build/ios/ipa/*.ipa
