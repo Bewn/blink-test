@@ -2,9 +2,14 @@ workflows:
   ios-native-quick-start:
     name: iOS Native
     max_build_duration: 120
-    instance_type: mac_mini_m1
+    instance_type: mac_pro
     environment: 
       xcode: latest
 
     artifacts: 
       - build/ios/ipa/*.ipa
+
+    scripts:
+      - name: Add provisioning profiles
+      script: |
+
